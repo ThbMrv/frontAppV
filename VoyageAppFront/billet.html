@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du voyage</title>
+</head>
+<body>
+    <h1>Détails du voyage</h1>
+
+    <div id="voyageDetails">
+        <h2 id="destination"></h2>
+        <p><strong>Prix :</strong> <span id="prix"></span></p>
+        <p><strong>Date de départ :</strong> <span id="dateDepart"></span></p>
+        <p><strong>Date de retour :</strong> <span id="dateRetour"></span></p>
+    </div>
+
+    <!-- Bouton de réservation affiché si l'utilisateur est connecté -->
+    <button id="boutonReservation">Réserver</button>
+
+    <!-- Message à afficher si l'utilisateur n'est pas connecté -->
+    <p id="messageConnexion" style="display: none;">Pour réserver, connectez-vous.</p>
+
+    <script src="/js/billet.js"></script>
+</body>
+</html>

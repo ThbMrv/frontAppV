@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin-right: 50vw;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+}
+
+.container .left {
+    flex: 2;
+    background-color: #343a40;
+    border-right: 2px solid black;
+}
+
+.container .right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Espace pour les icônes */
+    font-size: 14px;
+    border: none; /* Suppression des bordures */
+    border-radius: 5px; /* Conservez les coins arrondis si souhaité */
+    box-sizing: border-box;
+    background-color: #e0e0e0; /* Couleur de fond pour indiquer un champ actif */
+    outline: none; /* Supprime le contour bleu par défaut au focus */
+}
+
+input:focus {
+    background-color: #fff; /* Mettre en surbrillance lors du focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Effet lumineux */
+    outline: none; /* Assurez-vous qu'il n'y ait pas de contour */
+}
+
+input.icon-input {
+    padding-left: 40px;
+}
+
+input#utilisateur {
+    background-image: url('/images/utilisateur.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+input#email {
+    background-image: url('/images/enveloppe.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+/* Style pour afficher une icône cadenas */
+input#motdepasse {
+    background-image: url('/images/cadenas.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style pour la barre de séparation */
+.separator {
+    border: none; /* Supprime la bordure par défaut */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #ccc; /* Couleur de la ligne */
+    margin: 20px 0; /* Espacement au-dessus et en dessous */
+    width: 80%; /* Largeur relative au conteneur */
+    margin-left: auto;
+    margin-right: auto; /* Centrer la barre */
+}
+
+
+button:hover {
+    background-color: #aeb6be;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

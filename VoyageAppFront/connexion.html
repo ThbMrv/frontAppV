@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/connexion.css">
+    <title>Page de Connexion</title>
+
+</head>
+<body>
+    <nav>
+        <a href="accueil.html" class="logo">VoyageAPP</a>
+        <a href="voyages.html" class="link">Destinations</a>
+        <a href="reservations.html" class="link">Mes réservations</a>
+        <a id="login-link" href="connexion.html" class="link">Connexion</a>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+        </div>
+        <div class="right">
+            <h1>Connexion</h1>
+            <form id="loginForm" action="/connexion">
+                <div>
+                    <input type="text" id="utilisateur" name="utilisateur" required>
+                </div>
+                <div>
+                    <input type="password" id="motdepasse" name="motdepasse" required>
+                </div>
+                <div>
+                    <button type="submit">Se connecter</button>
+                </div>
+                <hr class="separator"> 
+            </form>
+            <p>Pas encore inscrit ? <a href="/register.html">Créer un compte</a></p>
+        </div>
+    </div>
+    
+    <p id="message"></p>
+
+    <!-- Inclure le script JavaScript -->
+    <script src="/js/connexion.js"></script>
+
+</body>
+</html>
